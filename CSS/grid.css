@@ -1,0 +1,28 @@
+.grid-container {
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.div1 {
+    background-color: rgb(247, 159, 159);
+    height: 200px;
+    text-align: center;
+    align-content: center;
+}
+
+.div2 {
+    background-color: rgb(138, 253, 138);
+    height: 200px;
+    text-align: center;
+    align-content: center;
+}
+
+.div3 {
+    background-color: rgb(127, 127, 250);
+    height: 200px;
+    text-align: center;
+    align-content: center;
+}

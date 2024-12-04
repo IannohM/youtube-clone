@@ -1,0 +1,56 @@
+.section-header{
+    color: initial;
+}
+.games,
+.music,
+.mixes{
+    height: 350px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.mix-artist{
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: rgb(75, 75, 75);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.video-title {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: start;
+    font-weight: 700;
+    margin-top: 10px;
+
+} 
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 45px 1fr;
+}
+
+.video-preview{
+    margin-right: 15px;
+}
+
+.games::-webkit-scrollbar,
+.music::-webkit-scrollbar,
+.mixes::-webkit-scrollbar{
+    display: none
+}
+
+.thumbnails{
+    width: 350px;
+    height: 218px;
+}
+
+
+
+.video-thumbnail{
+    width: 350px;
+    position: relative;
+    
+}
