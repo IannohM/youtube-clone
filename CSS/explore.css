@@ -4,13 +4,20 @@
 .games,
 .music,
 .mixes,
-.live{
+.live,
+.history,
+.recommended,
+.playlist{
     height: 350px;
     margin-bottom: 30px;
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
     overflow-y: hidden;
+}
+
+.mix-title{
+    margin-left: 10px;
 }
 
 .mix-artist{
@@ -48,8 +55,8 @@
     color: white;
     text-wrap: nowrap;
     border-radius: 3px;
-    right: 7px;
-    bottom: 10px;
+    right: 15px;
+    bottom: 15px;
     font-weight: 500;
     font-size: 12px;
     padding-left: 7px;
@@ -68,6 +75,7 @@
     position: relative;
     width: 44px;
     height: 44px;
+    object-fit: cover;
 
 }
 .live-text{
@@ -89,7 +97,10 @@
 .games::-webkit-scrollbar,
 .music::-webkit-scrollbar,
 .mixes::-webkit-scrollbar,
-.live::-webkit-scrollbar{
+.live::-webkit-scrollbar,
+.history::-webkit-scrollbar,
+.recommended::-webkit-scrollbar,
+.playlist::-webkit-scrollbar{
     display: none
 }
 
