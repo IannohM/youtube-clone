@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.search-container {
+    width: 300px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.search-bar {
+    width: 700px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.search-bar:focus+ .suggestion-list {
+    display: block;
+}
+
+.suggestion-list{
+    width: 700px;
+    list-style: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 13px;
+    display: none;
+    
+}
+
+.suggestion-option{
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.suggestion-option:hover{
+    background-color: grey;
+}

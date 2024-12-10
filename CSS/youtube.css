@@ -16,12 +16,45 @@ body{
 }
 
 .search-bar {
-    height: 48px;
     flex: 1;
+    height: 48px;
     border-radius: 2px;
     border: 1px solid grey;
     border-radius: 2rem;
     padding-left: 15px;
+}
+
+.suggestion-list{
+    width: 590px;
+    margin-right: 10px;
+    top: 60px;
+    position: absolute;
+    list-style: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    padding-bottom: 20px;
+    border-radius: 13px;
+    display: none;
+    justify-content: space-between;
+    align-content: space-evenly;
+    
+}
+.search-bar:focus+ .suggestion-list {
+    display: block;
+}
+
+
+.suggestion-option{
+    justify-content: center;
+    align-content: center;
+    height: 40px;
+}
+
+
+.suggestion-option:hover{
+    background-color: grey;
+    /* width: 100%; */
 }
 
 .video-title {
@@ -84,9 +117,11 @@ body{
     margin-right: 10px;
 }
 .profile-pic img {
-    width: 100%;
+    width: 44px;
+    height: 44px;
     margin-top: 18px;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .side-link{
@@ -172,7 +207,7 @@ body{
 .tooltips{
     position: absolute;
     padding: 9px 11px;
-    background-color: rgb(130, 130, 130);
+    background-color: rgb(255, 0, 0);
     border-radius: 3px;
     color: white;
     text-align: center;
@@ -296,7 +331,7 @@ body{
 
 }
 
-@media (max-width: 57rem){
+@media (max-width: 1150px){
 
     .grid-container{
         grid-template-columns: 1fr 1fr;
@@ -304,7 +339,7 @@ body{
     
 }
 
-@media (max-width: 37.5rem){
+@media (max-width: 700px){
     .grid-container{
         grid-template-columns: 1fr;
     }
