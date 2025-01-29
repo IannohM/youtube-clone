@@ -1,12 +1,12 @@
-.thumbnails{
+.thumbnails {
     width: 350px;
     height: 218px;
     object-fit: cover;
-    border-radius: 15px;
-    display: relative;
+    border-radius: 9px;
+    position: relative;
 }
 
-body{
+body {
     font-family: Roboto, Arial;
     padding-top: 90px;
     padding-left: 100px;
@@ -22,38 +22,57 @@ body{
     border: 1px solid grey;
     border-radius: 2rem;
     padding-left: 15px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: 1px;
+
 }
 
-.suggestion-list{
-    width: 590px;
-    margin-right: 10px;
+.history-icon{
+    height: 22px;
+    margin-left: 20px;
+}
+
+.search-bar:focus {
+    outline: 1px solid blue;
+    /* outline-width: 1px; */
+}
+
+.suggestion-list {
+    padding-top: 10px;
+    width: 560px;
     top: 60px;
+    z-index: 1000;
     position: absolute;
     list-style: none;
-    padding: 10px;
-    background-color: black;
-    color: white;
+    background-color: white;
     padding-bottom: 20px;
     border-radius: 13px;
     display: none;
-    justify-content: space-between;
-    align-content: space-evenly;
-    
+    border: 1px solid lightgray;
+
 }
-.search-bar:focus+ .suggestion-list {
+
+.suggestion-link {
+    color: black;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+
+.search-bar:focus+.suggestion-list {
     display: block;
 }
 
 
-.suggestion-option{
-    justify-content: center;
+.suggestion-option {
     align-content: center;
     height: 40px;
 }
 
 
-.suggestion-option:hover{
-    background-color: grey;
+.suggestion-option:hover {
+    background-color: rgb(174, 174, 174);
     /* width: 100%; */
 }
 
@@ -63,7 +82,7 @@ body{
     font-weight: 700;
     margin-top: 10px;
 
-} 
+}
 
 .video-author,
 .video-status {
@@ -78,13 +97,13 @@ body{
     margin-top: 6px;
 }
 
-.video-thumbnail{
+.video-thumbnail {
     width: 350px;
     position: relative;
-    
+
 }
 
-.video-time{
+.video-time {
     position: absolute;
     background-color: black;
     color: white;
@@ -104,18 +123,18 @@ body{
 .profile-pic {
     width: 44px;
     height: 44px;
-    vertical-align: top;
-    margin-right: 15px;
-    
+    margin-right: 50px;
+    border-radius: 50%;
 }
 
-.theme-icon{
+.theme-icon {
     width: 100%;
     transform: rotate(35deg);
     height: 50px;
     vertical-align: top;
     margin-right: 10px;
 }
+
 .profile-pic img {
     width: 44px;
     height: 44px;
@@ -124,16 +143,17 @@ body{
     object-fit: cover;
 }
 
-.side-link{
+.side-link {
     text-decoration: none;
     color: initial;
 }
 
-.video-info{
+.video-info {
     display: inline-block;
     width: 240px;
     margin-left: 15px;
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -142,7 +162,7 @@ body{
 }
 
 
-.header{
+.header {
     height: 65px;
     display: flex;
     flex-direction: row;
@@ -156,27 +176,25 @@ body{
     z-index: 1;
 }
 
-.sectionA{
+.sectionA {
     display: flex;
     width: 200px;
     align-items: center;
     vertical-align: top;
     margin-right: 70px;
-} 
+}
 
-.sectionB{
+.sectionB {
     margin-left: 50px;
     display: flex;
     flex-direction: row;
     flex: 1;
     align-items: center;
     margin-right: 70px;
-    
-
 }
 
-.sectionC{
-    width: 200px; 
+.sectionC {
+    width: 200px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -186,28 +204,30 @@ body{
 
 }
 
-.hamburger-menu{
+.hamburger-menu {
     height: 25px;
-    margin-left:20px;
+    margin-left: 20px;
 }
-.youtube-logo{
+
+.youtube-logo {
     height: 60px;
     margin-left: 20px;
 }
 
-.search-btn{
+.search-btn {
     height: 48px;
     width: 69px;
     border: 1px solid grey;
-    margin-left: -25px;
+    margin-left: 0px;
     border-radius: 0 2rem 2rem 0;
+    border-left: none;
 
 }
 
-.tooltips{
+.tooltips {
     position: absolute;
     padding: 9px 11px;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(122, 122, 122);
     border-radius: 3px;
     color: white;
     text-align: center;
@@ -223,29 +243,30 @@ body{
 .uploads:hover .tooltips,
 .apps:hover .tooltips,
 .theme:hover .tooltips,
-.notification-container:hover .tooltips{
+.notification-container:hover .tooltips {
     opacity: 1;
 }
 
-.theme-tooltip{
+.theme-tooltip {
     white-space: normal;
 }
-.search{
+
+.search {
     height: 29px;
-    
+
 }
 
 .search-btn,
-.voice-btn{
+.voice-btn {
     position: relative;
 }
 
-.voice-search-icon{
+.voice-search-icon {
     height: 30px;
-    
+
 }
 
-.voice-btn{
+.voice-btn {
     height: 40px;
     width: 40px;
     border-width: 0;
@@ -254,39 +275,39 @@ body{
     background-color: rgb(245, 245, 245);
 }
 
-.upload{
+.upload {
     height: 30px;
 
 }
 
-.yt-apps{
+.yt-apps {
     height: 30px;
 
 }
 
-.notifications{
+.notifications {
     height: 100%;
 
 }
 
-.notification-container{
+.notification-container {
     height: 30px;
     position: relative;
 }
 
-.notification-count{
+.notification-count {
     position: absolute;
     top: -4px;
     right: -4px;
     background-color: rgb(203, 6, 6);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 1px 6px 1px  6px;
+    padding: 1px 6px 1px 6px;
     font-size: 10px;
     border-radius: 50%;
 }
 
-.profilepic{
+.profilepic {
     height: 44px;
     width: 44px;
     border-radius: 50%;
@@ -294,12 +315,17 @@ body{
     object-position: top;
 }
 
-.home, .library, .youtube-music, .explore, .subscriptions, .originals{
+.home,
+.library,
+.youtube-music,
+.explore,
+.subscriptions,
+.originals {
     width: 35px;
     height: 25px;
 }
 
-.side-bar{
+.side-bar {
     display: flex;
     flex-direction: column;
     width: 72px;
@@ -311,7 +337,7 @@ body{
     z-index: 1;
 }
 
-.sidebar-icons{
+.sidebar-icons {
     height: 70px;
     display: flex;
     flex-direction: column;
@@ -320,27 +346,27 @@ body{
     margin-bottom: 5px;
 }
 
-.sidebar-icons:hover{
+.sidebar-icons:hover {
     background-color: rgb(237, 237, 237);
 
 }
 
-.icon-text{
+.icon-text {
     font-size: 12px;
     margin-top: 7px;
 
 }
 
-@media (max-width: 1150px){
+@media (max-width: 1150px) {
 
-    .grid-container{
+    .grid-container {
         grid-template-columns: 1fr 1fr;
     }
-    
+
 }
 
-@media (max-width: 700px){
-    .grid-container{
+@media (max-width: 700px) {
+    .grid-container {
         grid-template-columns: 1fr;
     }
 }
