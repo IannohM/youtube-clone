@@ -296,6 +296,114 @@ body {
     position: relative;
 }
 
+.hidden{
+    display: none;
+}
+
+.profile-div{
+    height: 94vh;
+    position: absolute;
+    right: 6%;
+    top: 14px;
+    background-color: white;
+    width: 270px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+    overflow: auto;
+    border-radius: 20px;
+}
+.profilepics {
+    height: 35px;
+    margin: 20px 15px;
+    top: 20px;
+    width: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.user-info{
+    display: flex;
+    border-bottom: 1px solid rgb(196, 196, 196);
+}
+
+.profileName{
+    vertical-align: top;
+    margin-top: 15px;
+}
+
+.username{
+    margin-top: -17px;
+}
+
+.google-info, 
+.youtube-studio-section,
+.user-data,
+.settings{
+    border-bottom: 1px solid rgb(196, 196, 196);
+}
+
+.google-name, 
+.sign-out-text, .switch-text, 
+.studio-text, 
+.purchase-text, 
+.get-data-text,
+.apperance-text,
+.lang-text,
+.location-text,
+.keyboard-text,
+.restrict-text,
+.settings-text,
+.help-text,
+.faq-text{
+    font-weight: bold;
+    color: rgb(104, 103, 103);
+}
+
+.google-acc, 
+.sign-out, 
+.switch, 
+.youtube-std, 
+.purchase, 
+.get-data, 
+.appearance,
+.language,
+.location-div,
+.keyboard-div,
+.restricted-div,
+.settings,
+.help,
+.faq-div{
+    display: flex;
+}
+
+.google-img, 
+.sign, 
+.youtube-studio, 
+.switch-user, 
+.dollar, 
+.user-protect,
+.moon,
+.lang-icon,
+.location,
+.keyboard,
+.restrict,
+.settings-img,
+.help-img,
+.faq{
+    width: 23px;
+    height: 23px;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+
+
+/* .youtube-studio, .switch-user{
+    height: 30px;
+    width: 30px;
+
+} */
+
 .notification-count {
     position: absolute;
     top: -4px;
@@ -310,11 +418,13 @@ body {
 
 .profilepic {
     height: 44px;
+    top: 20px;
     width: 44px;
     border-radius: 50%;
     object-fit: cover;
     object-position: top;
 }
+
 
 .home,
 .library,
@@ -368,8 +478,5 @@ body {
 @media (max-width: 700px) {
     .grid-container {
         grid-template-columns: 1fr;
-    }
-    .video-preview{
-        width: 80%;
     }
 }
