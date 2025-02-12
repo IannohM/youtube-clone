@@ -11,11 +11,12 @@
     position: absolute;
     background-color: black;
     color: white;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
     border-radius: 3px;
-    right: 10px;
-    bottom: 10px;
+    right: 18px;
+    font-size: 13px;
+    bottom: 9px;
     font-weight: 500;
 }
 
@@ -23,8 +24,8 @@
     position: relative;
     border-radius: 15px;
     margin-top: 15px;
-    width: 300px;
-    height: 170px;
+    width: 250px;
+    height: 130px;
     position: relative;
     object-fit: cover;
 
@@ -44,7 +45,7 @@
     font-size: 14px;
     color: rgb(92, 92, 92);
     margin-top: 0;
-    margin-left: 15px;
+    margin-left: 10px;
     margin-bottom: 0;
 }
 
@@ -63,7 +64,8 @@
 
 .video-thumb {
     position: relative;
-    width: 300px;
+    width: 260px;
+    height: auto;
 }
 
 
@@ -78,5 +80,27 @@
 
 .thumbnail-info{
     display: flex;
+    flex-direction: row;
 
 }
+
+.channel-name{
+    margin-top: 4px;
+}
+
+
+.video-preview{
+    margin-left: 30px;
+}
+
+hr{
+    margin-left: 30px;
+}
+
+
+/* @media (max-width: 700px) {
+    .video-thumb-time {
+        bottom: 65px;
+    }
+} */
+
