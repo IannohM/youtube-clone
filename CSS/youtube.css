@@ -479,4 +479,30 @@ body {
     .grid-container {
         grid-template-columns: 1fr;
     }
+
+    .side-bar{
+        display: none;
+    }
+
+    main{
+        position: absolute;
+        left: 10px;
+    }
+
+    .video-preview{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .thumbnails{
+        width: 450px;
+        height: 300px;
+        margin-left: 17px;
+    }
+
+    .video-time{
+        position: absolute;
+        right: -94px;
+    }
+    
 }
