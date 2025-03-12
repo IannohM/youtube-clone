@@ -4,12 +4,14 @@ const Body = document.querySelector('main')
 
 const Container = document.querySelector('.profile-div')
 
-const showContainer = function(){
-    Container.classList.remove('hidden')
+const toggleContainer = function(){
+    Container.classList.toggle('hidden')
 }
-const hideContainer = function(){
-    Container.classList.add('hidden')
-}
+// const hideContainer = function(){
+//     Container.classList.add('hidden')
+// }
 
-profile.addEventListener('click', showContainer)
-Body.addEventListener('click', hideContainer)
+// profile.addEventListener('click', showContainer)
+// Body.addEventListener('click', hideContainer)
+
+profile.addEventListener('click', toggleContainer)
